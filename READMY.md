@@ -31,10 +31,12 @@ sudo apt-get install npm
 (php у меня поставился 8.4)
 в папке с проектом выполнить команды:
 ```sh
+cp .env.example .env&&
 composer install&&
 npm install&&
 npm run build&&
 php artisan migrate&&
 php artisan serve
 ```
+
 Проект должен заработать на 127.0.0.1:8000
